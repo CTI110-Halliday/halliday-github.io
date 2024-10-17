@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Demo Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main>
+    <h1>Demo Form</h1>
+    
+    <form action="/submit" method="POST">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" min="1" max="120"><br><br>
+
+        <label for="comments">Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+        <!-- Radio buttons for selecting more information -->
+        <fieldset>
+            <legend>What would you like more information on?</legend>
+            <label><input type="radio" name="info" value="cats" required> Cats</label><br>
+            <label><input type="radio" name="info" value="dogs"> Dogs</label><br>
+            <label><input type="radio" name="info" value="elephants"> Elephants</label><br><br>
+        </fieldset>
+
+        <input type="submit" value="Submit">
+    </form>
+</main>
+
+</body>
+</html>
